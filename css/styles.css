@@ -23,6 +23,18 @@ body {
 
 .list {
   list-style: none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.header {
+  box-sizing: border-box;
 }
 
 .link {
@@ -41,6 +53,16 @@ body {
 
 .studio-color {
   color: var(--navyblue);
+}
+
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container {
+  display: flex;
+  justify-content: center;
 }
 
 .nav {
