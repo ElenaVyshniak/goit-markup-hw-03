@@ -17,6 +17,13 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
   background-color: #ffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
 }
 
 /* header section */
@@ -82,7 +89,6 @@ img {
 }
 
 .nav {
-  font-family: 'Roboto';
   display: flex;
   gap: 8px;
 }
@@ -101,7 +107,6 @@ img {
 }
 
 .address {
-  font-family: 'Roboto';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -126,7 +131,6 @@ img {
 }
 
 .hero-title {
-  font-family: 'Roboto';
   font-size: 56px;
   font-style: normal;
   font-weight: 700;
@@ -141,7 +145,6 @@ img {
 }
 
 .hero-button {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -162,7 +165,6 @@ img {
 }
 
 .order-servise {
-  font-family: 'Roboto';
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -175,7 +177,7 @@ img {
 
 .benefits-list-subtitle {
   color: var(--navyblue);
-  font-family: 'Roboto';
+
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -185,7 +187,7 @@ img {
 
 .benefits-list-desc {
   color: var(--slate);
-  font-family: 'Roboto';
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -202,7 +204,6 @@ img {
 .doing-title {
   color: var(--navyblue);
   text-align: center;
-  font-family: 'Roboto';
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -224,7 +225,6 @@ img {
 .team-title {
   color: var(--navyblue);
   text-align: center;
-  font-family: 'Roboto';
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -240,7 +240,6 @@ img {
 .team-list-subtitle {
   color: var(--navyblue);
   text-align: center;
-  font-family: 'Roboto';
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -250,7 +249,6 @@ img {
 .team-list-desc {
   color: var(--slate);
   text-align: center;
-  font-family: 'Roboto';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -261,7 +259,6 @@ img {
 /* filters section */
 
 .portfolio-button {
-  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -287,7 +284,6 @@ img {
 
 .row-list-desc {
   color: var(--slate);
-  font-family: 'Roboto';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -298,7 +294,12 @@ img {
 /* footer section  */
 
 .footer-section {
+  width: 1440px;
+  height: 312px;
+  flex-shrink: 0;
   background: var(--navyblue);
+  box-sizing: border-box;
+  align-items: center;
 }
 
 .footer-text {
@@ -307,10 +308,13 @@ img {
 
 .footer-desc {
   color: var(--cloud);
-  font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-top: 140px;
+  padding-right: 1020px;
+  padding-bottom: 100px;
+  padding-left: 156;
 }
