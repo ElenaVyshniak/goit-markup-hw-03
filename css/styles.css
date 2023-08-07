@@ -22,6 +22,19 @@ body {
   flex-direction: column;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
 main {
   flex-grow: 1;
 }
@@ -57,11 +70,14 @@ li {
 }
 
 .header {
+  width: 1440px;
+  height: 72px;
   box-sizing: border-box;
   display: flex;
   gap: 8px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .link {
@@ -149,6 +165,10 @@ img {
   padding-right: 472;
   padding-bottom: 292;
   padding-left: 472;
+}
+
+button {
+  font-family: inherit;
 }
 
 .hero-button {
