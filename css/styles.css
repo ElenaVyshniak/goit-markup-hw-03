@@ -70,11 +70,8 @@ li {
 }
 
 .header {
-  width: 1440px;
-  height: 72px;
   box-sizing: border-box;
   display: flex;
-  gap: 8px;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
@@ -150,23 +147,34 @@ img {
 /* hero section */
 
 .hero-section {
+  width: 1440px;
+  height: 600px;
+  flex-shrink: 0;
   background: var(--navyblue);
 }
 
 .hero-title {
+  width: 496px;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--white);
-  text-align: center;
   padding-top: 188;
   padding-right: 472;
   padding-bottom: 292;
   padding-left: 472;
+  text-align: center;
 }
 
 button {
   font-family: inherit;
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--iris);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .hero-button {
@@ -187,6 +195,7 @@ button {
 .hero-button:focus {
   background-color: var(--ocean);
   cursor: pointer;
+  border: 1px solid transparent;
 }
 
 .order-servise {
@@ -335,7 +344,6 @@ button {
   color: var(--cloud);
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding-top: 140px;
