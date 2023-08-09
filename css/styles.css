@@ -27,12 +27,10 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  margin: 0;
-}
-
+h6,
 p {
   margin: 0;
+  padding: 0;
 }
 
 main {
@@ -60,8 +58,18 @@ main {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 8px;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.advan-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.advan-list_item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 li {
@@ -75,6 +83,14 @@ li {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+}
+
+.header-flex .container {
+  max-width: 1440px;
+  padding: 16px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
 }
 
 .link {
@@ -99,9 +115,6 @@ li {
   max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 img {
@@ -244,6 +257,10 @@ button {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+}
+
+.doing-foto {
+  flex-basis: calc((100% - 3 * 24px) / 3);
 }
 
 .doing-list-img {
