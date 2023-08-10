@@ -17,15 +17,6 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
   background-color: #ffff;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-
-  padding-top: 100px;
-  padding-bottom: 100px;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
 }
 
 ul,
@@ -67,12 +58,28 @@ main {
 
 .list {
   list-style: none;
-  padding: 0 auto;
+  padding: 0;
   margin: 0;
-  display: inline;
+}
+
+.doing-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 24px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.address-items {
+  display: flex;
+  gap: 40px;
 }
 
 .advan-list {
@@ -87,11 +94,7 @@ main {
 }
 
 .header {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-flex .container {
@@ -130,9 +133,16 @@ img {
   display: block;
 }
 
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .nav {
   display: flex;
-  gap: 8px;
+  gap: 76px;
+  align-items: center;
 }
 
 .nav-link {
@@ -140,6 +150,8 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
+  display: block;
   color: var(--navyblue);
 }
 
@@ -169,15 +181,8 @@ img {
 /* hero section */
 
 .hero-section {
-  width: 1440px;
-  height: 600px;
-  flex-shrink: 0;
+  padding: 188px 0;
   background: var(--navyblue);
-  margin: 0 auto;
-  padding: 80 12 1912 12;
-  border: 1px solid #000;
-  background: var(--navyblue);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .hero-title {
@@ -186,11 +191,9 @@ img {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--white);
-  padding-top: 188;
-  padding-right: 472;
-  padding-bottom: 292;
-  padding-left: 472;
   text-align: center;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 button {
@@ -211,10 +214,9 @@ button {
   letter-spacing: 0.04em;
   color: #ffffff;
   background: var(--iris);
-  padding-top: 356;
-  padding-right: 635;
-  padding-bottom: 188;
-  padding-left: 636;
+  display: block;
+  margin: 0 auto;
+  border: none;
   text-align: center;
 }
 
@@ -260,6 +262,7 @@ button {
 
 .doing-section {
   background: #fff;
+  padding: 120px;
 }
 
 .doing-title {
@@ -271,11 +274,11 @@ button {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .doing-foto {
-  flex-basis: calc((100% - 3 * 24px) / 3);
-  max-width: 200px;
+  flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
 .doing-list-img {
@@ -287,6 +290,7 @@ button {
 
 .team-seaction {
   background: var(--cloud);
+  padding: 120px;
 }
 .team-title {
   color: var(--navyblue);
@@ -297,10 +301,17 @@ button {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .team-list-item {
   background: var(--white);
+  flex-basis: calc((100% - 2 * 24px) / 3);
+}
+
+.team-content {
+  padding-top: 232px;
+  padding-bottom: 120px;
 }
 
 .team-list-subtitle {
