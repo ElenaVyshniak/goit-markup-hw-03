@@ -243,6 +243,8 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--white);
+  min-width: 169px;
+  cursor: pointer;
 }
 
 /* benefits section */
@@ -353,6 +355,7 @@ button {
 .product {
   padding-top: 96px;
   padding-bottom: 120px;
+  border: 1px solid #e7e9fc;
 }
 
 .portfolio-button {
@@ -396,6 +399,7 @@ button {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .row-list-desc {
