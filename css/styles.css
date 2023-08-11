@@ -349,7 +349,8 @@ button {
 /* filters section */
 
 .product {
-  padding: 96зч 0 120px 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .portfolio-button {
@@ -361,7 +362,7 @@ button {
   background-color: var(--cloud);
   padding: 12px 24px;
   border-radius: 4px;
-  border: 1px solid var(--border);
+  border: var(--border);
 }
 
 .portfolio-button:focus,
@@ -371,20 +372,16 @@ button {
   cursor: pointer;
 }
 
-.product-list img {
+.product-list-img {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
-  margin: 0;
-  padding: 0;
+  gap: 24px;
 }
 
 .img-list_item {
   flex-basis: calc((100% - 2 * 24px) / 3);
 }
 .advan-product {
-  border: 1px solid var(--border);
   padding: 32px 16px;
   border-top: none;
 }
@@ -406,10 +403,8 @@ button {
   letter-spacing: 0.02em;
 }
 
-/* footer section  */
-
 .footer-section {
-  background: var(--navyblue);
+  background: #2e2f42;
   padding: 100px 0;
 }
 
