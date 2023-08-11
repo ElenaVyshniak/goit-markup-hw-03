@@ -92,6 +92,8 @@ main {
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
+  margin-bottom: 72px;
+  margin-top: 96px;
 }
 
 .advan-list_item {
@@ -347,7 +349,7 @@ button {
 /* filters section */
 
 .product {
-  padding: 120px;
+  padding: 96зч 0 120px 0;
 }
 
 .portfolio-button {
@@ -357,10 +359,9 @@ button {
   letter-spacing: 0.04em;
   color: var(--iris);
   background-color: var(--cloud);
-  display: flex;
   padding: 12px 24px;
-  align-items: flex-start;
   border-radius: 4px;
+  border: 1px solid var(--border);
 }
 
 .portfolio-button:focus,
@@ -370,14 +371,22 @@ button {
   cursor: pointer;
 }
 
-.product-list_item {
-  flex-basis: calc((100% - 2 * 24px) / 3);
+.product-list img {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  margin: 0;
+  padding: 0;
 }
 
+.img-list_item {
+  flex-basis: calc((100% - 2 * 24px) / 3);
+}
 .advan-product {
-  padding: 0 16px;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  border: 1px solid var(--border);
+  padding: 32px 16px;
+  border-top: none;
 }
 
 .row-list-subtitle {
