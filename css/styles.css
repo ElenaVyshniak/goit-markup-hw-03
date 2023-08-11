@@ -84,13 +84,18 @@ main {
 
 .advan-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 24px;
 }
 
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
 .advan-list_item {
-  flex-basis: calc((100% - 3 * 24px) / 4);
-  min-width: 200px;
+  flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
 .header {
@@ -238,6 +243,10 @@ button {
 
 /* benefits section */
 
+.benefits {
+  padding: 120px 0;
+}
+
 .benefits-list-subtitle {
   color: var(--navyblue);
 
@@ -306,12 +315,13 @@ button {
 
 .team-list-item {
   background: var(--white);
-  flex-basis: calc((100% - 2 * 24px) / 3);
+  flex-basis: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-content {
-  padding-top: 232px;
-  padding-bottom: 120px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .team-list-subtitle {
@@ -322,6 +332,7 @@ button {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .team-list-desc {
   color: var(--slate);
@@ -360,6 +371,12 @@ button {
   cursor: pointer;
 }
 
+.advan-product {
+  padding: 0 16px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
 .row-list-subtitle {
   color: var(--navyblue);
   font-size: 20px;
@@ -380,11 +397,13 @@ button {
 /* footer section  */
 
 .footer-section {
-  height: 312px;
-  flex-shrink: 0;
   background: var(--navyblue);
-  box-sizing: border-box;
-  align-items: center;
+  padding: 100px 0;
+}
+
+.footer-section .logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-text {
@@ -396,9 +415,5 @@ button {
   font-size: 16px;
   font-style: normal;
   line-height: 1.5;
-  letter-spacing: 0.02em;
-  padding-top: 140px;
-  padding-right: 1020px;
-  padding-bottom: 100px;
-  padding-left: 156;
+  max-width: 264px;
 }
