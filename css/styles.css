@@ -5,6 +5,7 @@
   --white: #fff;
   --ocean: #404bbf;
   --cloud: #f4f4fd;
+  --custom-color: #e7e9fc;
 }
 
 *,
@@ -368,17 +369,15 @@ button {
   color: #ffffff;
   background-color: #404bbf;
   cursor: pointer;
-  border: 1px solid transparen;
+  border: 1px solid transparent;
 }
 
 .product-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
-  row-gap: 48px;
   margin-bottom: 72px;
-  margin-top: 96px;
+  align-items: flex-start;
 }
 
 .product-list-img {
