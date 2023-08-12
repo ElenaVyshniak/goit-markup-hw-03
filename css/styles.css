@@ -349,7 +349,6 @@ button {
   padding-top: 96px;
   padding-bottom: 120px;
   border: 1px solid #e7e9fc;
-  border-top: none;
 }
 
 .portfolio-button {
@@ -361,7 +360,7 @@ button {
   background-color: var(--cloud);
   padding: 12px 24px;
   border-radius: 4px;
-  border: 1px solid var(--main-color);
+  border: 1px solid var(--custom-color);
 }
 
 .portfolio-button:focus,
@@ -395,6 +394,7 @@ button {
   background: var(--white);
   border-top: none;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .row-list-subtitle {
